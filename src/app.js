@@ -47,10 +47,13 @@ function newCard() {
   }
 }
 
-function newCardNumber() {}
-
 window.onload = function() {
   //MEMO: SIEMPRE LLAMAR LA CLASE!
   newCard();
   document.getElementById("newCard").addEventListener("click", newCard);
 };
+
+//Every 10 seconds genereta a new card
+var intervalId = window.setInterval(function() {
+  newCard();
+}, 10000);

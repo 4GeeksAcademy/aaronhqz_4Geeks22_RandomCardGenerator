@@ -11,6 +11,24 @@ button {
   flex-direction: column;
 }
 
+.propiedades {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  float: left;
+  margin-top: 30px;
+}
+
+.inputs {
+  padding: 10px;
+  border: black;
+  border-radius: 5%;
+}
+
+input {
+  width: 100px;
+}
+
 .card {
   margin-top: 30px;
   background-color: white;
