@@ -47,13 +47,21 @@ function newCard() {
   }
 }
 
+// Generate new card with button
 window.onload = function() {
   //MEMO: SIEMPRE LLAMAR LA CLASE!
   newCard();
   document.getElementById("newCard").addEventListener("click", newCard);
 };
 
-//Every 10 seconds genereta a new card
-var intervalId = window.setInterval(function() {
+//Generate a new card every 10 seconds / 10 000 miliseconds
+let intervalId = window.setInterval(function() {
   newCard();
 }, 10000);
+
+//Change card width and height
+// let cardWidthInput = document.getElementById("card-width").value;
+// let cardHeightInput = document.getElementById("card-height").value;
+
+// document.getElementById("card").style.width = cardWidthInput + "px";
+// document.getElementById("card").style.width = cardHeightInput + "px";
